@@ -42,3 +42,113 @@ _______________________________________________________________________
 Notes 1-29-19
 
 Stack and Queues
+
+_______________________________________________________________________
+
+Notes 2-1-19
+
+Doubly linked lists
+
+Normal linked list except it has references to the next and previous item.
+The head item should also have a reference to the end of the list.
+
+_______________________________________________________________________
+
+Notes 2-6-19
+
+Linked List Iterator
+
+Enhanced For Loops can use Iterator classes to run through list
+
+Implementing Iteration through
+	implements Iterable<Type>
+
+	Override the iterator() method
+
+	Create your own Iterator class to create implemented Iterator class 
+	that hasNext() and next(). 
+
+Notes 2-8-19
+
+Remove method for doublylinkedlist
+
+_______________________________________________________________________
+
+deux=two, cinq=five, one-un, three=trois, four=quatre
+
+Then sort becuase TreeMaps auto sort
+
+cinq, deux, four, one, three
+
+_______________________________________________________________________
+
+Notes 2-22-19
+
+Binary Search Trees
+
+			A
+		  /	  \
+		B	   C
+
+Must be comparable
+
+extends comparable()
+
+_______________________________________________________________________
+
+Notes 2-26-19
+
+Binary Tree size()
+
+Recursively call size from root
+
+size()
+	size=1
+	if(left != null)
+		size += left.size()
+	if(right != null)
+		size += right.size()
+	return size
+
+depth()
+	if node == null return 0
+	return depth(Node node)
+
+depth(Node node)
+	int left, right
+
+	if(node.left != null)
+		left = 1 + left.depth
+
+	if(node.right != null)
+		right = 1 + right.depth
+
+	if(left > right)
+		return left
+	else
+		return right
+
+_______________________________________________________________________
+
+Notes 2-27-19
+
+Sort list and process before 
+
+Write remove method from binarySearchTree
+Removes an element from the tree while preserving the rest of the binary tree
+
+_______________________________________________________________________
+
+Notes 3-4-19
+
+Sorting Algorithms
+-Merge Sort
+-Bucket Sort
+-Quick Sort
+-Insertion Sort
+
+_______________________________________________________________________
+
+Notes 3-6-19
+
+Starting GUI using Java Swing
